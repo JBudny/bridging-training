@@ -17,6 +17,13 @@ module.exports = {
           '.tsx',
           '.json',
         ],
+        alias: {
+          '@src': './src',
+          '@components': './src/components',
+          '@navigation': './src/navigation',
+          '@screens': './src/screens',
+          '@utils': './src/utils',
+        },
       },
     ],
     [
