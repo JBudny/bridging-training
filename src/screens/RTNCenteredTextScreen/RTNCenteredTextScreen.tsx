@@ -1,7 +1,7 @@
 import React from 'react';
 import {getStyles} from './RTNCenteredTextScreen.styles';
 import {RTNCenteredTextScreenProps} from './RTNCenteredTextScreen.types';
-import {Layout, Row, Typography} from '@components';
+import {Layout, Row, Typography, Tag} from '@components';
 import {useTheme} from '@react-navigation/native';
 
 export const RTNCenteredTextScreen: React.FC<
@@ -20,9 +20,7 @@ export const RTNCenteredTextScreen: React.FC<
         }}
         style={styles.header}>
         <Row gapSize="small">
-          <Typography variant="medium" size="medium" color={theme.colors.black}>
-            Details: Fabric Native Component
-          </Typography>
+          <Tag title="Fabric Native Component" />
         </Row>
       </Layout.Header>
       <Layout.Body>
