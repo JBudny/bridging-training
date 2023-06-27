@@ -4,10 +4,12 @@ import {ThemeTokens} from 'react-navigation-theme';
 export const getStyles = (theme: ThemeTokens) =>
   StyleSheet.create({
     container: {
-      flex: 1,
-    },
-    content: {
       paddingHorizontal: theme.spacings.medium,
-      flex: 1,
+      paddingVertical: theme.spacings.medium,
+      backgroundColor: theme.colors.white,
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'row',
+      ...theme.shadows.primary,
     },
   });
