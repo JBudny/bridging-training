@@ -11,6 +11,7 @@ interface ThemeTokens extends Theme {
     white: string;
   };
   spacings: {
+    regular: number;
     medium: number;
   };
   fonts: {

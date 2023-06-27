@@ -1,5 +1,5 @@
 import React from 'react';
-import {Layout, OutlineBtn} from '@components';
+import {Layout, Row, OutlineBtn} from '@components';
 import {HomeScreenProps} from './HomeScreen.types';
 import {View} from 'react-native';
 import {useTheme} from '@react-navigation/native';
@@ -18,9 +18,13 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
           showsVerticalScrollIndicator: false,
         }}>
         <View style={styles.body}>
-          <OutlineBtn title="Exercise 1" />
-          <OutlineBtn title="Exercise 2" />
-          <OutlineBtn title="Exercise 3" />
+          <Row gapSize="medium">
+            <OutlineBtn title="Exercise 1" />
+            <OutlineBtn title="Exercise 2" />
+          </Row>
+          <Row gapSize="medium">
+            <OutlineBtn title="Exercise 3" />
+          </Row>
         </View>
       </Layout.Body>
     </Layout.Wrapper>

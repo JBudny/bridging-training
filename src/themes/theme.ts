@@ -23,6 +23,7 @@ export const theme: ThemeTokens = {
     },
   },
   spacings: {
+    regular: 10,
     medium: 15,
   },
   shadows: {
