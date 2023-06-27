@@ -30,4 +30,12 @@ export const theme: ThemeTokens = {
       elevation: 4,
     },
   },
+  borders: {
+    roundings: {
+      regular: 10,
+    },
+    widths: {
+      regular: 2,
+    },
+  },
 };

@@ -1,2 +1,9 @@
 import {StyleSheet} from 'react-native';
-export const styles = StyleSheet.create({container: {flex: 1}});
+import {ThemeTokens} from 'react-navigation-theme';
+
+export const getStyles = ({spacings}: ThemeTokens) =>
+  StyleSheet.create({
+    body: {
+      rowGap: spacings.medium,
+    },
+  });

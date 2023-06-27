@@ -28,6 +28,14 @@ interface ThemeTokens extends Theme {
       elevation: ViewStyle['elevation'];
     };
   };
+  borders: {
+    roundings: {
+      regular: number;
+    };
+    widths: {
+      regular: number;
+    };
+  };
 }
 
 declare module '@react-navigation/native' {
