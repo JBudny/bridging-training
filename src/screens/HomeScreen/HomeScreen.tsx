@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {styles} from './HomeScreen.styles';
 import {ScreenWrapper} from '@components';
 import {HomeScreenProps} from './HomeScreen.types';
