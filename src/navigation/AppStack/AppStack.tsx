@@ -1,13 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {useTheme} from '@react-navigation/native';
 import {AppStackParamList} from './AppStack.types';
-import {HomeScreen} from '@screens';
+import {HomeScreen, RTNCenteredTextScreen} from '@screens';
 import {AppStackRoutes} from './AppStack.routes';
+import {useTheme} from '@react-navigation/native';
 import {renderHeaderTitle} from './AppStack.utils';
 
 const {Navigator, Screen} = createNativeStackNavigator<AppStackParamList>();
-const {Home} = AppStackRoutes;
+const {Home, RTNCenteredText} = AppStackRoutes;
 
 export const AppStack: React.FC = () => {
   const theme = useTheme();
@@ -24,6 +24,15 @@ export const AppStack: React.FC = () => {
         component={HomeScreen}
         options={{
           title: 'Bridging training',
+          headerTitle: ({children}) => renderHeaderTitle(children, theme),
+          headerStyle: {backgroundColor: theme.colors.blue},
+          headerTintColor: theme.colors.white,
+        }}
+      />
+      <Screen
+        name={RTNCenteredText}
+        component={RTNCenteredTextScreen}
+        options={{
           headerTitle: ({children}) => renderHeaderTitle(children, theme),
           headerStyle: {backgroundColor: theme.colors.blue},
           headerTintColor: theme.colors.white,

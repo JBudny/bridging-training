@@ -9,6 +9,7 @@ interface ThemeTokens extends Theme {
   colors: Theme['colors'] & {
     blue: string;
     white: string;
+    black: string;
   };
   spacings: {
     regular: number;

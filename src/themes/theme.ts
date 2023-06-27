@@ -7,6 +7,7 @@ export const theme: ThemeTokens = {
     ...DefaultTheme.colors,
     blue: '#2488df',
     white: '#f0eff4',
+    black: '#383f51',
   },
   fonts: {
     sizes: {
