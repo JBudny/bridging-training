@@ -1,8 +1,9 @@
 import React from 'react';
 import {getStyles} from './RTNCenteredTextScreen.styles';
 import {RTNCenteredTextScreenProps} from './RTNCenteredTextScreen.types';
-import {Layout, Row, Typography, Tag} from '@components';
+import {Layout, Row, Tag} from '@components';
 import {useTheme} from '@react-navigation/native';
+import RTNCenteredTextNativeComponent from 'rtn-centered-text/js/RTNCenteredTextNativeComponent';
 
 export const RTNCenteredTextScreen: React.FC<
   RTNCenteredTextScreenProps
@@ -24,9 +25,10 @@ export const RTNCenteredTextScreen: React.FC<
         </Row>
       </Layout.Header>
       <Layout.Body>
-        <Typography variant="medium" size="medium" color={theme.colors.black}>
-          RTNCenteredText placeholder
-        </Typography>
+        <RTNCenteredTextNativeComponent
+          text="Hello World!"
+          style={styles.rtnCenteredText}
+        />
       </Layout.Body>
     </Layout.Wrapper>
   );
