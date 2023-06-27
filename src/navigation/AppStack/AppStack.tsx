@@ -4,6 +4,7 @@ import {useTheme} from '@react-navigation/native';
 import {AppStackParamList} from './AppStack.types';
 import {HomeScreen} from '@screens';
 import {AppStackRoutes} from './AppStack.routes';
+import {renderHeaderTitle} from './AppStack.utils';
 
 const {Navigator, Screen} = createNativeStackNavigator<AppStackParamList>();
 const {Home} = AppStackRoutes;
@@ -22,7 +23,8 @@ export const AppStack: React.FC = () => {
         name={Home}
         component={HomeScreen}
         options={{
-          title: 'Bridging Tutorial',
+          title: 'Bridging training',
+          headerTitle: ({children}) => renderHeaderTitle(children, theme),
           headerStyle: {backgroundColor: theme.colors.blue},
           headerTintColor: theme.colors.white,
         }}
