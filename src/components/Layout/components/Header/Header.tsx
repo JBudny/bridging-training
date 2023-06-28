@@ -1,7 +1,8 @@
 import * as React from 'react';
-import {View} from 'react-native';
-import {HeaderProps} from './Header.types';
-import {renderCustomHeader, renderDefaultHeader} from './Header.utils';
+import { View } from 'react-native';
+
+import { HeaderProps } from './Header.types';
+import { renderCustomHeader, renderDefaultHeader } from './Header.utils';
 
 export const Header: React.FC<HeaderProps> = ({
   children,
@@ -11,7 +12,7 @@ export const Header: React.FC<HeaderProps> = ({
   ...props
 }) => (
   <View style={style} {...props}>
-    {renderDefaultHeader({children}) ||
-      renderCustomHeader({scrollable, scrollViewOptions, style, children})}
+    {renderDefaultHeader(children) ||
+      renderCustomHeader({ scrollable, scrollViewOptions, style, children })}
   </View>
 );

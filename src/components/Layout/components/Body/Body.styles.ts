@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {ThemeTokens} from 'react-navigation-theme';
+import { StyleSheet } from 'react-native';
+import { ThemeTokens } from 'react-navigation-theme';
 
 export const getStyles = (theme: ThemeTokens) =>
   StyleSheet.create({

@@ -1,8 +1,10 @@
 import * as React from 'react';
-import {ScrollView, View} from 'react-native';
-import {getStyles} from './Body.styles';
-import {BodyProps} from './Body.types';
-import {useTheme} from '@react-navigation/native';
+import { ScrollView, View } from 'react-native';
+
+import { useTheme } from '@react-navigation/native';
+
+import { getStyles } from './Body.styles';
+import { BodyProps } from './Body.types';
 
 export const Body: React.FC<BodyProps> = ({
   children,

@@ -15,7 +15,11 @@
     "!**/__fixtures__",
     "!**/__mocks__"
   ],
-  "keywords": ["react-native", "ios", "android"],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
   "repository": "<repository-url>",
   "author": "<author>",
   "license": "MIT",

@@ -1,9 +1,12 @@
 import * as React from 'react';
-import {Pressable} from 'react-native';
-import {getStyles} from './OutlineBtn.styles';
-import {OutlineBtnProps} from './OutlineBtn.types';
-import {Typography} from '@components';
-import {useTheme} from '@react-navigation/native';
+import { Pressable } from 'react-native';
+
+import { useTheme } from '@react-navigation/native';
+
+import { Typography } from '@components';
+
+import { getStyles } from './OutlineBtn.styles';
+import { OutlineBtnProps } from './OutlineBtn.types';
 
 export const OutlineBtn: React.FC<OutlineBtnProps> = ({
   title,
@@ -16,14 +19,14 @@ export const OutlineBtn: React.FC<OutlineBtnProps> = ({
 
   return (
     <Pressable
-      style={({pressed}) => [
+      style={({ pressed }) => [
         styles.container,
         pressed && styles.pressed,
         style,
       ]}
       onPress={onPress}
       {...props}>
-      {({pressed}) => (
+      {({ pressed }) => (
         <Typography
           variant="regular"
           size="small"

@@ -1,5 +1,5 @@
-export {Layout} from './Layout/Layout';
-export {Typography} from './Typography/Typography';
-export {Row} from './Row/Row';
-export {OutlineBtn} from './OutlineBtn/OutlineBtn';
-export {Tag} from './Tag/Tag';
+export { Layout } from './Layout/Layout';
+export { OutlineBtn } from './OutlineBtn/OutlineBtn';
+export { Row } from './Row/Row';
+export { Tag } from './Tag/Tag';
+export { Typography } from './Typography/Typography';

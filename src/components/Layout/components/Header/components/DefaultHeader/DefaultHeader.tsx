@@ -1,10 +1,13 @@
 import * as React from 'react';
-import {View, ViewProps} from 'react-native';
-import {getStyles} from './DefaultHeader.styles';
-import {Typography} from '@components';
-import {useTheme} from '@react-navigation/native';
+import { View, ViewProps } from 'react-native';
 
-export const DefaultHeader: React.FC<ViewProps> = ({children}) => {
+import { useTheme } from '@react-navigation/native';
+
+import { Typography } from '@components';
+
+import { getStyles } from './DefaultHeader.styles';
+
+export const DefaultHeader: React.FC<ViewProps> = ({ children }) => {
   const theme = useTheme();
   const styles = getStyles(theme);
 

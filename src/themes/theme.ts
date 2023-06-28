@@ -1,5 +1,6 @@
-import {DefaultTheme} from '@react-navigation/native';
-import {ThemeTokens} from 'react-navigation-theme';
+import { ThemeTokens } from 'react-navigation-theme';
+
+import { DefaultTheme } from '@react-navigation/native';
 
 export const theme: ThemeTokens = {
   ...DefaultTheme,

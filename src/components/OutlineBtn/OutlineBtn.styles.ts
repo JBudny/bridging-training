@@ -1,7 +1,7 @@
-import {StyleSheet} from 'react-native';
-import {ThemeTokens} from 'react-navigation-theme';
+import { StyleSheet } from 'react-native';
+import { ThemeTokens } from 'react-navigation-theme';
 
-export const getStyles = ({spacings, borders, colors}: ThemeTokens) =>
+export const getStyles = ({ spacings, borders, colors }: ThemeTokens) =>
   StyleSheet.create({
     container: {
       flex: 1,

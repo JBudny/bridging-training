@@ -1,5 +1,6 @@
-import {Theme} from '@react-navigation/native';
-import {TextStyle, ViewStyle} from 'react-native';
+import { TextStyle, ViewStyle } from 'react-native';
+
+import { Theme } from '@react-navigation/native';
 
 interface FontVariant {
   fontWeight: TextStyle['fontWeight'];

@@ -1,9 +1,12 @@
-import React from 'react';
-import {getStyles} from './RTNCenteredTextScreen.styles';
-import {RTNCenteredTextScreenProps} from './RTNCenteredTextScreen.types';
-import {Layout, Row, Tag} from '@components';
-import {useTheme} from '@react-navigation/native';
+import * as React from 'react';
+
+import { useTheme } from '@react-navigation/native';
 import RTNCenteredTextNativeComponent from 'rtn-centered-text/js/RTNCenteredTextNativeComponent';
+
+import { Layout, Row, Tag } from '@components';
+
+import { getStyles } from './RTNCenteredTextScreen.styles';
+import { RTNCenteredTextScreenProps } from './RTNCenteredTextScreen.types';
 
 export const RTNCenteredTextScreen: React.FC<
   RTNCenteredTextScreenProps

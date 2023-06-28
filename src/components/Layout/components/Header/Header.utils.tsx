@@ -1,19 +1,16 @@
 import * as React from 'react';
-import {DefaultHeader} from './components/DefaultHeader/DefaultHeader';
+import { ScrollView } from 'react-native';
 
-import {ScrollView} from 'react-native';
-import {HeaderProps} from './Header.types';
+import { DefaultHeader } from './components/DefaultHeader/DefaultHeader';
+import { HeaderProps } from './Header.types';
 
-export const renderDefaultHeader: React.FC<HeaderProps> = ({children}) =>
+export const renderDefaultHeader = (children: React.ReactNode) =>
   typeof children === 'string' && <DefaultHeader>{children}</DefaultHeader>;
 
-export const renderCustomHeader: React.FC<HeaderProps> = ({
+export const renderCustomHeader = ({
   scrollable,
   scrollViewOptions,
   children,
-}) =>
-  scrollable ? (
-    <ScrollView {...scrollViewOptions}>{children}</ScrollView>
-  ) : (
-    children
-  );
+}: HeaderProps) =>
+  (scrollable && <ScrollView {...scrollViewOptions}>{children}</ScrollView>) ||
+  children;

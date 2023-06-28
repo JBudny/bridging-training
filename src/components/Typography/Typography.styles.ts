@@ -1,6 +1,7 @@
-import {StyleSheet} from 'react-native';
-import {TypographySize, TypographyVariant} from './Typography.types';
-import {ThemeTokens} from 'react-navigation-theme';
+import { StyleSheet } from 'react-native';
+import { ThemeTokens } from 'react-navigation-theme';
+
+import { TypographySize, TypographyVariant } from './Typography.types';
 
 export const getTypographySizes = (theme: ThemeTokens) =>
   new Map([

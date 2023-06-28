@@ -1,11 +1,14 @@
 import React from 'react';
-import {View} from 'react-native';
-import {getStyles} from './Tag.styles';
-import {TagProps} from './Tag.types';
-import {Typography} from '@components';
-import {useTheme} from '@react-navigation/native';
+import { View } from 'react-native';
 
-export const Tag: React.FC<TagProps> = ({title}) => {
+import { useTheme } from '@react-navigation/native';
+
+import { Typography } from '@components';
+
+import { getStyles } from './Tag.styles';
+import { TagProps } from './Tag.types';
+
+export const Tag: React.FC<TagProps> = ({ title }) => {
   const theme = useTheme();
   const styles = getStyles(theme);
 

@@ -1,8 +1,9 @@
-import {StyleSheet} from 'react-native';
-import {GapSize} from './Row.types';
-import {ThemeTokens} from 'react-navigation-theme';
+import { StyleSheet } from 'react-native';
+import { ThemeTokens } from 'react-navigation-theme';
 
-export const getStyles = ({spacings}: ThemeTokens, gapSize: GapSize) =>
+import { GapSize } from './Row.types';
+
+export const getStyles = ({ spacings }: ThemeTokens, gapSize: GapSize) =>
   StyleSheet.create({
     container: {
       flexDirection: 'row',

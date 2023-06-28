@@ -1,8 +1,10 @@
 import * as React from 'react';
-import {getStyles} from './Wrapper.styles';
-import type {SafeAreaViewProps} from 'react-native-safe-area-context';
-import {View} from 'react-native';
-import {useTheme} from '@react-navigation/native';
+import { View } from 'react-native';
+import type { SafeAreaViewProps } from 'react-native-safe-area-context';
+
+import { useTheme } from '@react-navigation/native';
+
+import { getStyles } from './Wrapper.styles';
 
 export const Wrapper: React.FC<SafeAreaViewProps> = ({
   children,

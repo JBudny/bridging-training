@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "jsx": "react",
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
-		"paths": {
-			"@src": ["src"],
-			"@components": ["src/components"],
-			"@navigation": ["src/navigation"],
-			"@screens": ["src/screens"],
-			"@themes": ["src/themes"],
-			"@utils": ["src/utils"],
-		},
+    "paths": {
+      "@src": ["src"],
+      "@components": ["src/components"],
+      "@navigation": ["src/navigation"],
+      "@screens": ["src/screens"],
+      "@themes": ["src/themes"],
+      "@utils": ["src/utils"]
+    }
   },
   "extends": "@tsconfig/react-native/tsconfig.json"
 }

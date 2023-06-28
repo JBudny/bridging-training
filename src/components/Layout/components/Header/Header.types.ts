@@ -1,4 +1,4 @@
-import {ScrollViewProps, ViewProps} from 'react-native';
+import { ScrollViewProps, ViewProps } from 'react-native';
 
 export interface HeaderProps extends ViewProps {
   scrollable?: boolean;

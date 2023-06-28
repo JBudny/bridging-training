@@ -1,8 +1,10 @@
 import React from 'react';
-import {View} from 'react-native';
-import {getStyles} from './Row.styles';
-import {RowProps} from './Row.types';
-import {useTheme} from '@react-navigation/native';
+import { View } from 'react-native';
+
+import { useTheme } from '@react-navigation/native';
+
+import { getStyles } from './Row.styles';
+import { RowProps } from './Row.types';
 
 export const Row: React.FC<RowProps> = ({
   children,

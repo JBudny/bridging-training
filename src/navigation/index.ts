@@ -1,3 +1,3 @@
-export {RootNavigator} from './RootNavigator/RootNavigator';
-export {AppStack} from './AppStack/AppStack';
-export {AppStackParamList} from './AppStack/AppStack.types';
+export { AppStack } from './AppStack/AppStack';
+export type { AppStackParamList } from './AppStack/AppStack.types';
+export { RootNavigator } from './RootNavigator/RootNavigator';
