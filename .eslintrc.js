@@ -77,6 +77,7 @@ module.exports = {
       },
       rules: {
         'import/no-unresolved': 2,
+        '@typescript-eslint/no-unused-vars': 2,
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
         '@typescript-eslint/consistent-type-assertions': [
           'error',
