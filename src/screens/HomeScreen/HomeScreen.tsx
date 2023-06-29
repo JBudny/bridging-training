@@ -21,6 +21,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
 
   const openRTNCenteredTextScreen = () =>
     navigate(AppStackRoutes.RTNCenteredText);
+  const openAppInfoModuleScreen = () => navigate(AppStackRoutes.AppInfoModule);
 
   return (
     <Layout.Wrapper>
@@ -34,7 +35,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
           <Row gapSize="medium">
             <OutlineBtn
               onPress={openRTNCenteredTextScreen}
-              title="RTNCenteredText1"
+              title="RTNCenteredText"
+            />
+            <OutlineBtn
+              onPress={openAppInfoModuleScreen}
+              title="AppInfoModule"
             />
           </Row>
         </View>
