@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "app-info-package",
+  "version": "0.0.1",
+  "description": "App info package example",
+  "react-native": "src",
+  "source": "src",
+  "main": "src",
+  "module": "src",
+  "files": [
+    "src",
+    "android",
+    "ios",
+    "AppInfoPackage.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "repository": "https://github.com/JBudny/bridging-training",
+  "author": "JBudny",
+  "license": "MIT",
+  "homepage": "https://github.com/JBudny/bridging-training",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "AppInfoPackage",
+    "type": "all",
+    "jsSrcsDir": "js",
+    "android": {
+      "javaPackageName": "com.appinfopackage"
+    }
+  }
+}

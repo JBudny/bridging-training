@@ -8883,11 +8883,11 @@ __metadata:
 
 "rtn-centered-text@file:./Exercises/RTNCenteredText::locator=bridging%40workspace%3A.":
   version: 0.0.1
-  resolution: "rtn-centered-text@file:./Exercises/RTNCenteredText#./Exercises/RTNCenteredText::hash=52e9b1&locator=bridging%40workspace%3A."
+  resolution: "rtn-centered-text@file:./Exercises/RTNCenteredText#./Exercises/RTNCenteredText::hash=b0e37f&locator=bridging%40workspace%3A."
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 9c55dc7c0be856d45f636ebb8f9559993c0e846b49aa6a1414b170943c69a685589263ca1a4c4fc8afc3496ad7f7e92c5e0089fbc4cabafeba949a687d40ff1b
+  checksum: 6822bad70ce72f36af930f8ea124e8a4baa5d08fead5f097650be118601e1d288f5ce7c218fb9059d5e0f2ce92de2de13be07d3fdd68f4b77df5421fa83c0af6
   languageName: node
   linkType: hard
 
