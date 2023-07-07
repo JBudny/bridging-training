@@ -18,7 +18,7 @@ module.exports = {
           '.json',
         ],
         alias: {
-          'app-info-package': './app-info-package',
+          'app-info-package': './Exercises/app-info-package',
           '@src': './src',
           '@components': './src/components',
           '@navigation': './src/navigation',
