@@ -4,10 +4,10 @@ import { useTheme } from '@react-navigation/native';
 
 import { Layout, Row, Tag } from '@components';
 
-import { getStyles } from './AppInfoModuleScreen.styles';
-import { AppInfoModuleScreenProps } from './AppInfoModuleScreen.types';
+import { getStyles } from './AppInfoScreen.styles';
+import { AppInfoScreenProps } from './AppInfoScreen.types';
 
-export const AppInfoModuleScreen: React.FC<AppInfoModuleScreenProps> = () => {
+export const AppInfoScreen: React.FC<AppInfoScreenProps> = () => {
   const theme = useTheme();
   const styles = getStyles(theme);
 

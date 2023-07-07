@@ -3,18 +3,14 @@ import * as React from 'react';
 import { useTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import {
-  AppInfoModuleScreen,
-  HomeScreen,
-  RTNCenteredTextScreen,
-} from '@screens';
+import { AppInfoScreen, HomeScreen, RTNCenteredTextScreen } from '@screens';
 
 import { AppStackRoutes } from './AppStack.routes';
 import { AppStackParamList } from './AppStack.types';
 import { renderHeaderTitle } from './AppStack.utils';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParamList>();
-const { Home, RTNCenteredText, AppInfoModule } = AppStackRoutes;
+const { Home, RTNCenteredText, AppInfo } = AppStackRoutes;
 
 export const AppStack: React.FC = () => {
   const theme = useTheme();
@@ -46,8 +42,8 @@ export const AppStack: React.FC = () => {
         }}
       />
       <Screen
-        name={AppInfoModule}
-        component={AppInfoModuleScreen}
+        name={AppInfo}
+        component={AppInfoScreen}
         options={{
           headerTitle: ({ children }) => renderHeaderTitle(children, theme),
           headerStyle: { backgroundColor: theme.colors.blue },

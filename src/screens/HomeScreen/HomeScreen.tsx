@@ -21,7 +21,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
 
   const openRTNCenteredTextScreen = () =>
     navigate(AppStackRoutes.RTNCenteredText);
-  const openAppInfoModuleScreen = () => navigate(AppStackRoutes.AppInfoModule);
+  const openAppInfoScreen = () => navigate(AppStackRoutes.AppInfo);
 
   return (
     <Layout.Wrapper>
@@ -37,10 +37,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
               onPress={openRTNCenteredTextScreen}
               title="RTNCenteredText"
             />
-            <OutlineBtn
-              onPress={openAppInfoModuleScreen}
-              title="AppInfoModule"
-            />
+            <OutlineBtn onPress={openAppInfoScreen} title="AppInfo" />
           </Row>
         </View>
       </Layout.Body>
