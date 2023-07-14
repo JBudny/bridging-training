@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { useTheme } from '@react-navigation/native';
-import RTNCenteredTextNativeComponent from 'rtn-centered-text/js/RTNCenteredTextNativeComponent';
+import { RTNCenteredTextNativeComponent } from 'Exercises/rtn-centered-text/js';
 
 import { Layout, Row, Tag } from '@components';
 

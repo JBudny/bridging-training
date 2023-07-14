@@ -5,5 +5,8 @@ module.exports = {
     'app-info-package': {
       root: path.resolve(__dirname, './Exercises/app-info-package'),
     },
+    'rtn-centered-text': {
+      root: path.resolve(__dirname, './Exercises/rtn-centered-text'),
+    },
   },
 };

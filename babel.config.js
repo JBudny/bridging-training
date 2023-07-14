@@ -19,6 +19,7 @@ module.exports = {
         ],
         alias: {
           'app-info-package': './Exercises/app-info-package',
+          'rtn-centered-text': './Exercises/rtn-centered-text',
           '@src': './src',
           '@components': './src/components',
           '@navigation': './src/navigation',
