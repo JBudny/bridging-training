@@ -13,7 +13,10 @@ class AppInfoTurboPackage : TurboReactPackage() {
      * Initialize and export modules based on the name of the required module
      */
     override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
-        return null
+        return when (name) {
+            AppInfoModule.NAME -> AppInfoModule(reactContext)
+            else -> null
+        }
     }
 
     /**
@@ -24,6 +27,7 @@ class AppInfoTurboPackage : TurboReactPackage() {
          * Here declare the array of exported modules
          */
         val moduleList: Array<Class<out NativeModule?>> = arrayOf(
+            AppInfoModule::class.java
         )
         val reactModuleInfoMap: MutableMap<String, ReactModuleInfo> = HashMap()
         /**
@@ -31,16 +35,15 @@ class AppInfoTurboPackage : TurboReactPackage() {
          */
         for (moduleClass in moduleList) {
             val reactModule = moduleClass.getAnnotation(ReactModule::class.java) ?: continue
-            reactModuleInfoMap[reactModule.name] =
-                ReactModuleInfo(
-                    reactModule.name,
-                    moduleClass.name,
-                    true,
-                    reactModule.needsEagerInit,
-                    reactModule.hasConstants,
-                    reactModule.isCxxModule,
-                    TurboModule::class.java.isAssignableFrom(moduleClass)
-                )
+            reactModuleInfoMap[reactModule.name] = ReactModuleInfo(
+                reactModule.name,
+                moduleClass.name,
+                true,
+                reactModule.needsEagerInit,
+                reactModule.hasConstants,
+                reactModule.isCxxModule,
+                TurboModule::class.java.isAssignableFrom(moduleClass)
+            )
         }
         return ReactModuleInfoProvider { reactModuleInfoMap }
     }

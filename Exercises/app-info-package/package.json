@@ -3,9 +3,9 @@
   "name": "app-info-package",
   "version": "0.0.1",
   "description": "App info package exercise",
-  "react-native": "js/index",
-  "source": "js/index",
-  "exports": "./js/index",
+  "react-native": "js",
+  "source": "js",
+  "main": "js",
   "files": [
     "js",
     "android",
@@ -27,7 +27,7 @@
   },
   "codegenConfig": {
     "name": "AppInfoPackage",
-    "type": "all",
+    "type": "modules",
     "jsSrcsDir": "js",
     "android": {
       "javaPackageName": "com.appinfopackage"
