@@ -25,6 +25,7 @@ export const RTNCenteredTextScreen: React.FC<
         style={styles.header}>
         <Row gapSize="small">
           <Tag title="Fabric Native Component" />
+          <Tag title="Android" />
         </Row>
       </Layout.Header>
       <Layout.Body>
