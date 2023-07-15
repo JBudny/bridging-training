@@ -5,12 +5,10 @@ import com.facebook.react.bridge.ReactApplicationContext
 /**
  * Native module's shared implementation
  */
-class SaveFilePickerImpl(
+class SaveFilePickerModuleImpl(
     private val reactContext: ReactApplicationContext
 ) {
-
-
     companion object {
-        const val NAME = "SaveFilePicker"
+        const val NAME = "SaveFilePickerModule"
     }
 }
