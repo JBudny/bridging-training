@@ -48,7 +48,10 @@ module.exports = {
     'newline-before-return': 2,
     'react-native/no-color-literals': 1,
     'react-native/no-inline-styles': 1,
-    'react-native/no-raw-text': [2, { skip: ['Layout.Header', 'Typography'] }],
+    'react-native/no-raw-text': [
+      2,
+      { skip: ['Layout.Header', 'Typography', 'Typography.Typography'] },
+    ],
     'react-native/no-single-element-style-arrays': 2,
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,

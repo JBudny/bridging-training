@@ -1,10 +1,12 @@
 import * as React from 'react';
+import { Linking, View } from 'react-native';
 
 import { useTheme } from '@react-navigation/native';
 import { RTNCenteredTextNativeComponent } from 'Exercises/rtn-centered-text/js';
 
-import { Layout, Row, Tag } from '@components';
+import { Layout, Row, Tag, Typography } from '@components';
 
+import { fabricNativeComponentURL } from './constants';
 import { getStyles } from './RTNCenteredTextScreen.styles';
 import { RTNCenteredTextScreenProps } from './RTNCenteredTextScreen.types';
 
@@ -13,6 +15,10 @@ export const RTNCenteredTextScreen: React.FC<
 > = () => {
   const theme = useTheme();
   const styles = getStyles(theme);
+  const openDocs = React.useCallback(
+    () => Linking.openURL(fabricNativeComponentURL),
+    [],
+  );
 
   return (
     <Layout.Wrapper>
@@ -29,10 +35,46 @@ export const RTNCenteredTextScreen: React.FC<
         </Row>
       </Layout.Header>
       <Layout.Body>
-        <RTNCenteredTextNativeComponent
-          text="Hello World!"
-          style={styles.rtnCenteredText}
-        />
+        <View style={styles.bodyContent}>
+          <Row gapSize="medium">
+            <Typography
+              variant="medium"
+              size="medium"
+              color={theme.colors.black}>
+              Task description
+            </Typography>
+          </Row>
+          <Row gapSize="medium">
+            <Typography
+              variant="regular"
+              size="small"
+              color={theme.colors.black}>
+              As a user, I want to see the centered "Hello World!" text. (Fabric
+              Native Components
+              <Typography
+                variant="medium"
+                size="small"
+                color={theme.colors.blue}
+                onPress={openDocs}>
+                {' '}
+                guide
+              </Typography>
+              )
+            </Typography>
+          </Row>
+          <Row gapSize="medium">
+            <Typography
+              variant="medium"
+              size="medium"
+              color={theme.colors.black}>
+              Result
+            </Typography>
+          </Row>
+          <RTNCenteredTextNativeComponent
+            text="Hello World!"
+            style={styles.rtnCenteredText}
+          />
+        </View>
       </Layout.Body>
     </Layout.Wrapper>
   );

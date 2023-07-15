@@ -11,4 +11,7 @@ export const getStyles = ({ colors, spacings, fonts, shadows }: ThemeTokens) =>
     rtnCenteredText: {
       height: fonts.sizes.medium,
     },
+    bodyContent: {
+      rowGap: spacings.medium,
+    },
   });

@@ -35,6 +35,31 @@ export const AppInfoScreen: React.FC<AppInfoScreenProps> = () => {
         <View style={styles.bodyContent}>
           <Row gapSize="medium">
             <Typography
+              variant="medium"
+              size="medium"
+              color={theme.colors.black}>
+              Task description
+            </Typography>
+          </Row>
+          <Row gapSize="medium">
+            <Typography
+              variant="regular"
+              size="small"
+              color={theme.colors.black}>
+              As a user, I want to see the package name and version, so that I
+              know if I use test or live version of the app.
+            </Typography>
+          </Row>
+          <Row gapSize="medium">
+            <Typography
+              variant="medium"
+              size="medium"
+              color={theme.colors.black}>
+              Result
+            </Typography>
+          </Row>
+          <Row gapSize="medium">
+            <Typography
               variant="regular"
               size="small"
               color={theme.colors.black}>
