@@ -50,8 +50,9 @@ export const RTNCenteredTextScreen: React.FC<
               size="small"
               color={theme.colors.black}>
               As a user, I want to see the centered "Hello World!" text. (Fabric
-              Native Components{' '}
+              Native Components
               <Link size="small" onPress={openDocs}>
+                {' '}
                 guide
               </Link>
               )

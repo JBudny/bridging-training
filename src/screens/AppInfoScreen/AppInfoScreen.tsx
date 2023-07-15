@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { Linking, View } from 'react-native';
 
 import { useTheme } from '@react-navigation/native';
 import { AppInfoModule } from 'app-info-package';
 
-import { Layout, Row, Tag, Typography } from '@components';
+import { Layout, Link, Row, Tag, Typography } from '@components';
 
 import { getStyles } from './AppInfoScreen.styles';
 import { AppInfoScreenProps } from './AppInfoScreen.types';
+import { appInfoModuleURL } from './constants';
 
 export const AppInfoScreen: React.FC<AppInfoScreenProps> = () => {
   const theme = useTheme();
@@ -15,6 +16,10 @@ export const AppInfoScreen: React.FC<AppInfoScreenProps> = () => {
   const appBuildNumber = AppInfoModule.getAppBuildNumber();
   const appBundleId = AppInfoModule.getAppBundleId();
   const appVersion = AppInfoModule.getAppVersion();
+  const openExercise = React.useCallback(
+    () => Linking.openURL(appInfoModuleURL),
+    [],
+  );
 
   return (
     <Layout.Wrapper>
@@ -47,7 +52,12 @@ export const AppInfoScreen: React.FC<AppInfoScreenProps> = () => {
               size="small"
               color={theme.colors.black}>
               As a user, I want to see the package name and version, so that I
-              know if I use test or live version of the app.
+              know if I use test or live version of the app. (AppInfo module
+              <Link size="small" onPress={openExercise}>
+                {' '}
+                intro
+              </Link>
+              )
             </Typography>
           </Row>
           <Row gapSize="medium">
