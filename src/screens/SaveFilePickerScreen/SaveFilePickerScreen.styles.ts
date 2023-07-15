@@ -8,4 +8,7 @@ export const getStyles = ({ colors, spacings, shadows }: ThemeTokens) =>
       padding: spacings.medium,
       ...shadows.primary,
     },
+    bodyContent: {
+      rowGap: spacings.medium,
+    },
   });
