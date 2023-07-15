@@ -3,14 +3,19 @@ import * as React from 'react';
 import { useTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { AppInfoScreen, HomeScreen, RTNCenteredTextScreen } from '@screens';
+import {
+  AppInfoScreen,
+  HomeScreen,
+  RTNCenteredTextScreen,
+  SaveFilePickerScreen,
+} from '@screens';
 
 import { AppStackRoutes } from './AppStack.routes';
 import { AppStackParamList } from './AppStack.types';
 import { renderHeaderTitle } from './AppStack.utils';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParamList>();
-const { Home, RTNCenteredText, AppInfo } = AppStackRoutes;
+const { Home, RTNCenteredText, AppInfo, SaveFilePicker } = AppStackRoutes;
 
 export const AppStack: React.FC = () => {
   const theme = useTheme();
@@ -44,6 +49,15 @@ export const AppStack: React.FC = () => {
       <Screen
         name={AppInfo}
         component={AppInfoScreen}
+        options={{
+          headerTitle: ({ children }) => renderHeaderTitle(children, theme),
+          headerStyle: { backgroundColor: theme.colors.blue },
+          headerTintColor: theme.colors.white,
+        }}
+      />
+      <Screen
+        name={SaveFilePicker}
+        component={SaveFilePickerScreen}
         options={{
           headerTitle: ({ children }) => renderHeaderTitle(children, theme),
           headerStyle: { backgroundColor: theme.colors.blue },

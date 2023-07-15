@@ -22,6 +22,8 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
   const openRTNCenteredTextScreen = () =>
     navigate(AppStackRoutes.RTNCenteredText);
   const openAppInfoScreen = () => navigate(AppStackRoutes.AppInfo);
+  const openSaveFilePickerScreen = () =>
+    navigate(AppStackRoutes.SaveFilePicker);
 
   return (
     <Layout.Wrapper>
@@ -38,6 +40,12 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
               title="RTNCenteredText"
             />
             <OutlineBtn onPress={openAppInfoScreen} title="AppInfo" />
+          </Row>
+          <Row gapSize="medium">
+            <OutlineBtn
+              onPress={openSaveFilePickerScreen}
+              title="SaveFilePicker"
+            />
           </Row>
         </View>
       </Layout.Body>
