@@ -4,7 +4,7 @@ import { Linking, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import { RTNCenteredTextNativeComponent } from 'Exercises/rtn-centered-text/js';
 
-import { Layout, Row, Tag, Typography } from '@components';
+import { Layout, Link, Row, Tag, Typography } from '@components';
 
 import { fabricNativeComponentURL } from './constants';
 import { getStyles } from './RTNCenteredTextScreen.styles';
@@ -50,15 +50,10 @@ export const RTNCenteredTextScreen: React.FC<
               size="small"
               color={theme.colors.black}>
               As a user, I want to see the centered "Hello World!" text. (Fabric
-              Native Components
-              <Typography
-                variant="medium"
-                size="small"
-                color={theme.colors.blue}
-                onPress={openDocs}>
-                {' '}
+              Native Components{' '}
+              <Link size="small" onPress={openDocs}>
                 guide
-              </Typography>
+              </Link>
               )
             </Typography>
           </Row>

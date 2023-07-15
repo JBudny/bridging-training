@@ -50,7 +50,15 @@ module.exports = {
     'react-native/no-inline-styles': 1,
     'react-native/no-raw-text': [
       2,
-      { skip: ['Layout.Header', 'Typography', 'Typography.Typography'] },
+      {
+        skip: [
+          'Layout.Header',
+          'Typography',
+          'Typography.Typography',
+          'Link',
+          'Typography.Link',
+        ],
+      },
     ],
     'react-native/no-single-element-style-arrays': 2,
     'react-native/no-unused-styles': 2,
