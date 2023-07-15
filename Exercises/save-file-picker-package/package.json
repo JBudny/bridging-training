@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "save-file-picker-package",
+  "version": "0.0.1",
+  "description": "Save file picker exercise",
+  "react-native": "js",
+  "source": "js",
+  "main": "js",
+  "files": [
+    "js",
+    "android",
+    "ios",
+    "SaveFilePickerPackage.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "repository": "https://github.com/JBudny/bridging-training",
+  "author": "JBudny",
+  "license": "MIT",
+  "homepage": "https://github.com/JBudny/bridging-training",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "SaveFilePickerPackage",
+    "type": "modules",
+    "jsSrcsDir": "js",
+    "android": {
+      "javaPackageName": "com.savefilepickerpackage"
+    }
+  }
+}

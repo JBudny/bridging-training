@@ -18,6 +18,7 @@ module.exports = {
           '.json',
         ],
         alias: {
+          'save-file-picker-package': './Exercises/save-file-picker-package',
           'app-info-package': './Exercises/app-info-package',
           'rtn-centered-text': './Exercises/rtn-centered-text',
           '@src': './src',
