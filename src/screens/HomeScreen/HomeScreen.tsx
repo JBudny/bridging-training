@@ -24,6 +24,8 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
   const openAppInfoScreen = () => navigate(AppStackRoutes.AppInfo);
   const openSaveFilePickerScreen = () =>
     navigate(AppStackRoutes.SaveFilePicker);
+  const openScreenOrientationScreen = () =>
+    navigate(AppStackRoutes.ScreenOrientation);
 
   return (
     <Layout.Wrapper>
@@ -45,6 +47,10 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
             <OutlineBtn
               onPress={openSaveFilePickerScreen}
               title="SaveFilePicker"
+            />
+            <OutlineBtn
+              onPress={openScreenOrientationScreen}
+              title="ScreenOrientation"
             />
           </Row>
         </View>

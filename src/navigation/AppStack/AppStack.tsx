@@ -8,6 +8,7 @@ import {
   HomeScreen,
   RTNCenteredTextScreen,
   SaveFilePickerScreen,
+  ScreenOrientationScreen,
 } from '@screens';
 
 import { AppStackRoutes } from './AppStack.routes';
@@ -15,7 +16,8 @@ import { AppStackParamList } from './AppStack.types';
 import { renderHeaderTitle } from './AppStack.utils';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParamList>();
-const { Home, RTNCenteredText, AppInfo, SaveFilePicker } = AppStackRoutes;
+const { Home, RTNCenteredText, AppInfo, SaveFilePicker, ScreenOrientation } =
+  AppStackRoutes;
 
 export const AppStack: React.FC = () => {
   const theme = useTheme();
@@ -58,6 +60,15 @@ export const AppStack: React.FC = () => {
       <Screen
         name={SaveFilePicker}
         component={SaveFilePickerScreen}
+        options={{
+          headerTitle: ({ children }) => renderHeaderTitle(children, theme),
+          headerStyle: { backgroundColor: theme.colors.blue },
+          headerTintColor: theme.colors.white,
+        }}
+      />
+      <Screen
+        name={ScreenOrientation}
+        component={ScreenOrientationScreen}
         options={{
           headerTitle: ({ children }) => renderHeaderTitle(children, theme),
           headerStyle: { backgroundColor: theme.colors.blue },
