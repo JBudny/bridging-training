@@ -50,9 +50,8 @@ export const ScreenOrientationScreen: React.FC<
               size="small"
               color={theme.colors.black}>
               As a user, I want to detect when my device is in landscape or
-              portrait orientation. (ScreenOrientation module
+              portrait orientation. (ScreenOrientation modulee&nbsp;
               <Link size="small" onPress={openExercise}>
-                {' '}
                 intro
               </Link>
               )

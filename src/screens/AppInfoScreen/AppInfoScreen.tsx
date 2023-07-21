@@ -52,9 +52,9 @@ export const AppInfoScreen: React.FC<AppInfoScreenProps> = () => {
               size="small"
               color={theme.colors.black}>
               As a user, I want to see the package name and version, so that I
-              know if I use test or live version of the app. (AppInfo module
+              know if I use test or live version of the app. (AppInfo
+              module&nbsp;
               <Link size="small" onPress={openExercise}>
-                {' '}
                 intro
               </Link>
               )

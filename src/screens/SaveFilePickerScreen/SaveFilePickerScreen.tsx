@@ -84,9 +84,8 @@ export const SaveFilePickerScreen: React.FC<SaveFilePickerScreenProps> = () => {
               size="small"
               color={theme.colors.black}>
               As a user, I want to use a save the file on my device.
-              (SaveFilePicker module
+              (SaveFilePicker modulee&nbsp;
               <Link size="small" onPress={openExercise}>
-                {' '}
                 intro
               </Link>
               )
