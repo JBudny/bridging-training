@@ -2,6 +2,9 @@ const path = require('path');
 
 module.exports = {
   dependencies: {
+    'screen-orientation-package': {
+      root: path.resolve(__dirname, './Exercises/screen-orientation-package'),
+    },
     'save-file-picker-package': {
       root: path.resolve(__dirname, './Exercises/save-file-picker-package'),
     },

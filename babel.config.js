@@ -18,6 +18,8 @@ module.exports = {
           '.json',
         ],
         alias: {
+          'screen-orientation-package':
+            './Exercises/screen-orientation-package',
           'save-file-picker-package': './Exercises/save-file-picker-package',
           'app-info-package': './Exercises/app-info-package',
           'rtn-centered-text': './Exercises/rtn-centered-text',
